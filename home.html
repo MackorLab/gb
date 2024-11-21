@@ -1598,7 +1598,35 @@ z-index: 1000; /* Убедитесь, что кнопка находится п�
       }
     },
     // Настройка устройств
-
+    deviceManager: {
+      devices: [
+        {
+          id: 'desktop',
+          name: 'Desktop',
+          width: '', // Дефолтное устройство
+        },
+        {
+          id: 'vkontakte',
+          name: 'ВКонтакте',
+          width: '850px', // Добавляем новое устройство
+        },
+        {
+          id: 'tablet',
+          name: 'Tablet',
+          width: '768px', // По умолчанию
+        },
+        {
+          id: 'mobileLandscape',
+          name: 'Mobile Landscape',
+          width: '568px',
+        },
+        {
+          id: 'mobilePortrait',
+          name: 'Mobile Portrait',
+          width: '320px',
+        },
+      ],
+    },
   });
 </script>
 <script>
