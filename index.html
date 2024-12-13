@@ -1276,6 +1276,48 @@ z-index: 1000; /* Убедитесь, что кнопка находится п�
     transform: rotate(45deg) scale(1.1);    
     color: #FFF;
 }
+
+/* Контейнер для сетки кнопок */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 кнопки в ряд */
+    gap: 10px; /* Расстояние между кнопками */
+    justify-items: center; /* Выравнивание по центру */
+    padding: 20px;
+}
+
+/* Стили для кнопок */
+.button-con1, .button-con2, .button-con3, .button-con4,
+.button-con5, .button-con6, .button-con7, .button-con8,
+.button-con9 {
+    width: 50px; /* Фиксированная ширина кнопок */
+    height: 50px; /* Фиксированная высота кнопок */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; /* Цвет фона кнопок */
+    border-radius: 10px; /* Скругление углов */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень */
+    transition: transform 0.2s ease; /* Анимация при наведении */
+}
+
+/* При наведении на кнопку */
+.button-con1:hover, .button-con2:hover, .button-con3:hover,
+.button-con4:hover, .button-con5:hover, .button-con6:hover,
+.button-con7:hover, .button-con8:hover, .button-con9:hover {
+    transform: scale(1.1); /* Увеличение кнопки */
+    background-color: #f0f0f0; /* Изменение цвета фона */
+}
+
+/* SVG внутри кнопок */
+.button-con1 svg, .button-con2 svg, .button-con3 svg,
+.button-con4 svg, .button-con5 svg, .button-con6 svg,
+.button-con7 svg, .button-con8 svg, .button-con9 svg {
+    width: 30px; /* Размер SVG */
+    height: 30px;
+    fill: #333; /* Цвет SVG */
+}
+    
 </style>
 
 
@@ -1305,7 +1347,8 @@ z-index: 1000; /* Убедитесь, что кнопка находится п�
 
 
 
-
+    <!-- Контейнер для сетки кнопок -->
+    <div class="button-grid">
 
 
 
@@ -1366,7 +1409,7 @@ z-index: 1000; /* Убедитесь, что кнопка находится п�
 </div>  
 
 
-
+  </div>
   
 </div>
 
