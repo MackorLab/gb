@@ -972,150 +972,40 @@ z-index: 1000; /* Убедитесь, что кнопка находится п�
 
 
 <style>
-  /* Стили для контейнера кнопки */
-  /* Стили для кнопки "Показать/Скрыть" */
-  #myBtn_3 {
-    background-color: #4CAF50; /* Зелёный цвет */
-    color: white;
-    border: none;
-    padding: 10px 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px; /* относительно длины родительского блока */     
-  }
-  /* Стили для кнопки "Показать/Скрыть" */
-  #vkontBtn {
-    background-color: #4CAF50; /* Зелёный цвет */
-    color: white;
-    border: none;
-    padding: 10px 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px; /* относительно длины родительского блока */     
-  }
-  /* Стили для кнопки "Показать/Скрыть" */
-  #getBtn {
-    background-color: #4CAF50; /* Зелёный цвет */
-    color: white;
-    border: none;
-    padding: 10px 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px; /* относительно длины родительского блока */     
-  }
-  /* Стили для кнопки "Показать/Скрыть" */
-  #myBtn {
-    background-color: #4CAF50; /* Зелёный цвет */
-    color: white;
-    border: none;
-    padding: 10px 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px; /* относительно длины родительского блока */     
-  }
-  /* Стили для кнопки "Показать/Скрыть" */
-  #myBtn_2 {
-    background-color: #4CAF50; /* Зелёный цвет */
-    color: white;
-    border: none;
-    padding: 10px 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px; /* относительно длины родительского блока */     
-  }
-  /* Стили для кнопки "Показать/Скрыть" */
-  #myBtn_4 {
-    background-color: #4CAF50; /* Зелёный цвет */
-    color: white;
-    border: none;
-    padding: 10px 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px; /* относительно длины родительского блока */     
-  }
-  
-   /* Стили для кнопки "Показать/Скрыть" */
-  #myBtn_5 {
-    background-color: #4CAF50; /* Зелёный цвет */
-    color: white;
-    border: none;
-    padding: 10px 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px; /* относительно длины родительского блока */     
-  } 
-  /* Стили для кнопки "Показать/Скрыть" */
-  #myBtn_8 {
-    background-color: #4CAF50; /* Зелёный цвет */
-    color: white;
-    border: none;
-    padding: 10px 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px; /* относительно длины родительского блока */     
-  }
-  
-   /* Стили для кнопки "Показать/Скрыть" */
-  #myBtn_9 {
-    background-color: #4CAF50; /* Зелёный цвет */
-    color: white;
-    border: none;
-    padding: 10px 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px; /* относительно длины родительского блока */     
-  } 
-     /* Стили для кнопки "Показать/Скрыть" */
-  #vk_auth_button {
-    background-color: #4CAF50; /* Зелёный цвет */
-    color: white;
-    border: none;
-    padding: 10px 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px; /* относительно длины родительского блока */     
-  } 
-  #vkontBtn:hover {
-    background-color: #388E3C; /* Тёмно-зелёный цвет при наведении */
-  }
-  #myBtn_3:hover {
-    background-color: #388E3C; /* Тёмно-зелёный цвет при наведении */
-  }
-  #getBtn:hover {
-    background-color: #388E3C; /* Тёмно-зелёный цвет при наведении */
-  }
-  #myBtn:hover {
-    background-color: #388E3C; /* Тёмно-зелёный цвет при наведении */
-  }  
-  #myBtn_2:hover {
-    background-color: #388E3C; /* Тёмно-зелёный цвет при наведении */
-  }  
-    #myBtn_4:hover {
-    background-color: #388E3C; /* Тёмно-зелёный цвет при наведении */
-  } 
-    #myBtn_5:hover {
-    background-color: #388E3C; /* Тёмно-зелёный цвет при наведении */
-  } 
- 
-    #myBtn_8:hover {
-    background-color: #388E3C; /* Тёмно-зелёный цвет при наведении */
-  } 
-    #myBtn_9:hover {
-    background-color: #388E3C; /* Тёмно-зелёный цвет при наведении */
-  } 
-      #vk_auth_button:hover {
-    background-color: #388E3C; /* Тёмно-зелёный цвет при наведении */
-  } 
+/* Основные стили для кнопок */
+#myBtn_3,
+#vkontBtn,
+#getBtn,
+#myBtn,
+#myBtn_2,
+#myBtn_4,
+#myBtn_5,
+#myBtn_8,
+#myBtn_9,
+#vk_auth_button {
+    background-color: #4CAF50; /* Фон кнопки */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем границу */
+    padding: 10px; /* Отступы */
+    font-size: 16px; /* Размер текста */
+    border-radius: 5px; /* Скругление */
+    cursor: pointer; /* Курсор */
+    transition: box-shadow 0.3s ease; /* Анимация тени */
+}
+
+/* При наведении */
+#myBtn_3:hover,
+#vkontBtn:hover,
+#getBtn:hover,
+#myBtn:hover,
+#myBtn_2:hover,
+#myBtn_4:hover,
+#myBtn_5:hover,
+#myBtn_8:hover,
+#myBtn_9:hover,
+#vk_auth_button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень при наведении */
+}
 </style>
 
 
