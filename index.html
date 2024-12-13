@@ -1970,15 +1970,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  
+<script>  
+
+        function loadSettings() {
+            // Загружаем ключ из локального хранилища
+            const apiKeySys = localStorage.getItem('api_key_sys');
+            if (apiKeySys) {
+                document.getElementById('api_key_sys').value = apiKeySys;
+            }
+
+        }
 
 
 
+  function saveApiKeySys() {
+      const apiKeySys = document.getElementById('api_key_sys').value;
+      localStorage.setItem('api_key_sys', apiKeySys);
+  }
+  window.onload = loadSettings;
 
-
-
-
-
+</script>
   
  
 </body>
