@@ -1207,6 +1207,15 @@ z-index: 1000; /* Убедитесь, что кнопка находится п�
     height: 30px;
     fill: #333; /* Цвет SVG */
 }
+
+input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+}
+
     
 </style>
 
@@ -1236,6 +1245,8 @@ z-index: 1000; /* Убедитесь, что кнопка находится п�
    <!-- Кнопка для показа/скрытия приложения -->
 
 
+<label for="api_key_sys"><span class="orange-text">api_key_sys (Выдаётся администрацией сервиса):</span></label>
+<input type="text" id="api_key_sys" name="api_key_sys" onblur="saveApiKeySys()"><br><br>
 
     <!-- Контейнер для сетки кнопок -->
     <div class="button-grid">
